@@ -42,6 +42,7 @@ public class TalonIntegrationServiceImpl implements TalonIntegrationService {
         );
     }
 
+
     @Override
     public IntegrationStateV2 updateCustomerSession(CustomerSessionRequest customerSession) throws ApiException {
 
