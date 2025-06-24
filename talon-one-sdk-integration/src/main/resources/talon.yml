@@ -1,4 +1,4 @@
 talon:
   api:
-    base-url: url-placeholder
-    key : key-placeholder
+    base-url: https://mycompany.europe-west1.talon.one
+    key : dbc644d33aa74d582bd9479c59e16f970fe13bf3

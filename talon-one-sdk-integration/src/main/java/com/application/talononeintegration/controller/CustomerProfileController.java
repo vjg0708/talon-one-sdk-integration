@@ -25,7 +25,7 @@ public class CustomerProfileController {
         this.profileService = profileService;
     }
 
-    @PostMapping("/profile")
+    @PostMapping("/addProfile")
     public ResponseEntity<CustomerProfileIntegrationResponseV2> updateProfile(
             @RequestBody CustomerProfileRequest customerProfile) throws ApiException {
 

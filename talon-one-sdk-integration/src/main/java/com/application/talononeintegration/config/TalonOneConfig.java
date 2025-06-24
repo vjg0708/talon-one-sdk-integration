@@ -14,6 +14,7 @@ public class TalonOneConfig {
 
     @Autowired
     public TalonOneConfig(TalonOneProperties properties) {
+
         this.properties = properties;
     }
 
@@ -22,7 +23,7 @@ public class TalonOneConfig {
 
         ApiClient apiClient = new ApiClient("api_key_v1");
         apiClient.setBasePath(properties.getBaseUrl());
-        apiClient.setApiKeyPrefix("ApiKey-V1");
+        apiClient.setApiKeyPrefix("ApiKey-v1");
         apiClient.setApiKey(properties.getKey());
 
         return new IntegrationApi(apiClient);

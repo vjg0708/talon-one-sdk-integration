@@ -20,7 +20,8 @@ public class CustomerProfileServiceImpl implements CustomerProfileService {
 
     @Autowired
     public CustomerProfileServiceImpl(IntegrationApi integrationApi) {
-    this.integrationApi = integrationApi;
+
+        this.integrationApi = integrationApi;
     }
 
 

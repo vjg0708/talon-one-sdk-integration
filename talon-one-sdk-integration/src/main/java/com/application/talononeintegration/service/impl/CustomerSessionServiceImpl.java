@@ -4,10 +4,7 @@ import com.application.talononeintegration.DTO.CustomerSessionRequest;
 import com.application.talononeintegration.service.CustomerSessionService;
 import one.talon.ApiException;
 import one.talon.api.IntegrationApi;
-import one.talon.model.CartItem;
-import one.talon.model.IntegrationRequest;
-import one.talon.model.IntegrationStateV2;
-import one.talon.model.NewCustomerSessionV2;
+import one.talon.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.threeten.bp.OffsetDateTime;
@@ -61,5 +58,11 @@ public class CustomerSessionServiceImpl implements CustomerSessionService {
                 true,
                 OffsetDateTime.now()
         );
+    }
+
+    @Override
+    public CustomerSessionV2 getCustomerSession(String sessionId) throws ApiException {
+
+        return integrationApi.getCustomerSession(sessionId).getCustomerSession();
     }
 }
